@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Политика конфиденциальности приложения MamoKeep: локальные записи, резервные копии, выгрузки и управление данными.">
-<title>Политика конфиденциальности — MamoKeep</title>
+<title>Политика конфиденциальности / Privacy Policy — MamoKeep</title>
 <style>
 :root { color-scheme: light dark; }
 * { box-sizing: border-box; }
@@ -20,8 +20,10 @@ code { background: #8881; padding: 1px 5px; border-radius: 4px; font-size: .9em;
 </head>
 <body>
 <main>
+<nav aria-label="Язык / Language"><a href="#ru" lang="ru" hreflang="ru">Русский</a> · <a href="#en" lang="en" hreflang="en">English</a></nav>
+<section id="ru" lang="ru" aria-label="Политика конфиденциальности на русском">
 <h1>Политика конфиденциальности MamoKeep</h1>
-<p><strong>Редакция от 25 октября 2026 года.</strong></p>
+<p><strong>Редакция от 28 октября 2026 года.</strong></p>
 <h2 id="section-1">1. Приложение и ответственный контакт</h2>
 <p>Настоящая Политика описывает обработку данных в Android-приложении <strong>MamoKeep</strong>
 (<code>io.github.snowdrit.mamokeep</code>) — помощнике для ведения гаража, обслуживания,
@@ -236,6 +238,220 @@ MamoKeep не получает платёжные реквизиты через 
 размещается на странице публикации Политики.</p>
 <p>Изменение Политики не приводит к автоматическому изменению или удалению
 ранее созданных внешних копий и переданных текстов.</p>
+</section>
+<hr>
+<section id="en" lang="en" aria-label="Privacy policy in English">
+<h1>MamoKeep Privacy Policy</h1>
+<p><strong>Version dated 28 October 2026.</strong></p>
+<h2 id="en-section-1">1. The app and privacy contact</h2>
+<p>This Policy describes data processing in the <strong>MamoKeep</strong> Android app
+(<code>io.github.snowdrit.mamokeep</code>), which helps you manage your garage, maintenance,
+documents, mileage and refuelling records.</p>
+<p>Developer and contact for privacy matters: <strong>Matfey Andreevich Artyukhin
+(Артюхин Матфей Андреевич)</strong>,
+<strong><a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a></strong>.</p>
+<p>The app is free, requires no registration, has no server of its own for storing
+your garage, and contains no advertising, built-in analytics or service that
+automatically sends crash reports to the developer.</p>
+<h2 id="en-section-2">2. What data is processed and why</h2>
+<p>You decide what to include in your records. The app may process:</p>
+<ul>
+<li>vehicle information, including a name and VIN if you provide them;</li>
+<li>mileage and individual odometer readings;</li>
+<li>maintenance, consumables, dates, intervals, costs and work history;</li>
+<li>document information and expiry dates;</li>
+<li>refuelling, fuel and expense records;</li>
+<li>images, PDFs and UTF-8 text files that you select or share with the app for processing on your device;</li>
+<li>text that is extracted, recognised, pasted or corrected by you, free-text notes and the question you enter for an AI export;</li>
+<li>app, reminder and backup settings;</li>
+<li>local operational information about reminders and backups.</li>
+</ul>
+<p>This information is used to display your garage and history, perform calculations,
+provide reminders, create and restore backups, and prepare exports you select.
+Operations on local records take place on your device as part of the app features
+and settings you use. Free-text fields may contain personal data if you enter it.</p>
+<h2 id="en-section-3">3. Local storage and deletion</h2>
+<p>Your main records and settings are stored in the app's private storage on your
+device, with access restricted by Android. They are not automatically sent to
+the developer.</p>
+<p>To help diagnose reminder operation, the app keeps the most recent 200 operational
+log entries locally: execution time, the number of vehicles and the number of
+reminders sent. It also stores backup status, the time of the last successful
+backup and the address of the selected folder. This information is not sent
+to the developer automatically and is deleted along with the app's private data.</p>
+<p>Records are kept until you delete them. The options for editing or deleting an
+individual record depend on its type. Standalone odometer readings entered
+manually can be edited or deleted in the selected vehicle's odometer history.
+Mileage from refuelling and completed work is changed through the corresponding
+records. You can delete all private local MamoKeep data by clearing the app's
+data in Android settings or uninstalling the app.</p>
+<p>The developer cannot remotely read or delete your garage.</p>
+<p>The app disables Android's standard backup of private app data and includes
+exclusions for system-managed device transfers. File backups created by MamoKeep
+are described separately below.</p>
+<p>Deleting records or uninstalling the app does not delete files remaining in your
+selected folder, cloud storage, clipboard or with recipients of an export.
+You need to manage those copies separately through the relevant system or service.</p>
+<h2 id="en-section-4">4. Backups and restoration</h2>
+<p>Manual backups and automatic backups you configure are saved to a location you
+choose through Android. This location may be on your device or provided by a
+cloud service. Once you enable automatic backups, subsequent backups may be
+created on a schedule without a separate action for each backup.</p>
+<p>A backup contains the records needed for restoration, including saved notes on
+completed work with text you have imported, recognised, pasted or corrected.
+The scanner's original images, PDFs and text files are not included in the backup.
+The backup is saved as a JSON file. <strong>MamoKeep does not encrypt this file.</strong>
+Access to it depends on the selected folder and provider; do not place the backup
+in a publicly accessible folder if you do not want to disclose its contents.</p>
+<p>If you choose a cloud location, the file is transferred to that provider.
+Server locations, storage, synchronisation, trash and deletion are also governed
+by that provider's terms. Processing may take place outside your country of
+residence. Creating a backup does not, by itself, give the MamoKeep developer
+access to it.</p>
+<p>To restore a backup, the app reads a file you select. <strong>After your confirmation,
+restoration replaces the current garage and reminder settings with the contents
+of the backup</strong>, rather than merging them with your current records.</p>
+<p>With automatic backups, a new backup for the same day may replace the previous
+one. You manage backups for other days yourself; their retention and deletion
+may also depend on the selected provider's rules. Disabling automatic backups
+does not, by itself, delete files already created.</p>
+<h2 id="en-section-5">5. AI exports and sharing text</h2>
+<p>MamoKeep prepares text for AI <strong>locally on your device</strong>. The app does not itself
+send this text to an AI system or choose an AI service for you.</p>
+<p>You can explicitly copy the text to the clipboard, save it to a file or share it
+with an app you select through Android's system share menu. MamoKeep does not
+encrypt saved text. The operating system manages the clipboard; after sharing,
+the selected recipient processes the data under its own terms.</p>
+<p>A saved note on completed work, including text you have imported, recognised,
+pasted or corrected, may be included in an export along with the maintenance
+history you select.</p>
+<p>The hiding option lets you exclude the VIN and vehicle name. <strong>Free-text notes,
+including text from receipts and documents, and the question you enter are not
+automatically anonymised.</strong> Review the entire export before copying, saving or
+sharing it: it may contain personal information.</p>
+<p>Once text has been shared with a third-party service, that service's rules govern
+its storage and deletion. Deleting the original record in MamoKeep does not
+delete text previously shared with a recipient.</p>
+<h2 id="en-section-6">6. Receipt import, the scanner and downloads from GitHub</h2>
+<p>You can select an image, PDF or UTF-8 text file through Android's system file
+picker. A file can also be sent from another app using Share or Open with;
+text can be shared using Share or pasted into a field manually. A separate
+camera app is opened to take a photo. MamoKeep reads the file you select or share,
+the resulting photo and the text you share or paste.</p>
+<p>Size-limited temporary copies are created in the app's cache to read files.
+Temporary page images may be created when processing a PDF; the camera also
+writes its result to a temporary cache file. Working images and text are used
+on the device. Selected original files are not modified, including when you
+rotate an image in the scanner.</p>
+<p>Text is extracted from the document or recognised locally. Recognising text
+in images, including PDF pages, requires a scanner package. The current app
+version includes the V5 package, which can be activated without internet access.
+Using the scanner is optional. On Android 15 and later, existing text may be
+extracted from a PDF's text layer; otherwise, OCR is used. If the result is
+incomplete, you can explicitly choose to recognise the entire PDF: all pages
+will then be recognised as images using the scanner package. Text files and
+pasted text can be processed without this package.</p>
+<p>PDFs are read in a separate isolated Android process without network permission
+or access to the garage database. Local processing does not send selected files
+or text to the developer, GitHub or an AI service. MamoKeep does not open or
+download links contained in receipt or document text. The app does not collect
+your documents or recognition results for model fine-tuning and does not train
+models on this data. If you select a file from an Android cloud provider,
+retrieving it may require that provider to connect to the network.</p>
+<p>Before saving, you review and, if necessary, correct the text and fields.
+Importing, extracting text and recognising text do not, by themselves, create
+records. Original images, PDFs and text files are not attached to a garage
+record. When saving completed work, you can save the reviewed text as its note;
+this note is included in backups and the corresponding AI export as described
+in sections 4 and 5. For refuelling, the confirmed fields are saved, rather than
+the original file or the full receipt text.</p>
+<p>Temporary files are intended for processing, not document storage. On normal
+completion, an error or cancellation, the app deletes them after the current
+read or processing operation finishes. If cleanup does not finish, including
+when Android unexpectedly stops the process, temporary files may remain in the
+private cache until you clear the cache through Android, clear the app's data
+or uninstall the app. Working text and images may remain in memory for review
+and repeated recognition until you close the scanner. This does not delete
+original files selected from outside MamoKeep.</p>
+<p>You can keep your main records without an internet connection. When you open
+the list of scanner package versions or explicitly check for them, the app may
+request a catalogue from GitHub. Downloads of selected packages start after
+your confirmation and may continue after you close the screen.</p>
+<p>These downloads use HTTPS and allowed GitHub addresses, including <code>github.com</code>,
+<code>release-assets.githubusercontent.com</code> and <code>objects.githubusercontent.com</code>.
+Requests do not include VINs, garage records, documents, photographs or AI exports.
+Download servers receive ordinary network request information, including your
+IP address, the time of the request and the resource requested.</p>
+<p>The processing of this information is described in the
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+The MamoKeep developer does not control how long GitHub retains its logs.
+GitHub may process data in the United States and other countries.</p>
+<h2 id="en-section-7">7. Permissions and file access</h2>
+<ul>
+<li><strong>Notifications</strong> are needed for reminders. You can deny or disable them
+in Android settings; the app's other records remain accessible.</li>
+<li><strong>Internet access</strong> is used to download the catalogue and packages from GitHub.</li>
+<li><strong>Access to a selected or shared file or selected folder</strong> is granted through
+Android's system picker or by explicitly sharing a file with MamoKeep from
+another app. It is used for backups, restoration, exports and importing images,
+PDFs and text files. This is not general access to all your files.</li>
+<li>Android operational permissions allow deferred tasks to run, resume their
+operation after a reboot, and perform downloads.</li>
+</ul>
+<p>MamoKeep does not request Android's <code>CAMERA</code> permission: photos are taken by a
+separate camera app that is given access to a temporary file for the result.
+The app does not request access to the microphone, contacts or location.</p>
+<h2 id="en-section-8">8. The policy page, external services and voluntary support</h2>
+<p>When you visit this Policy's page on GitHub Pages, GitHub receives technical
+request information, including your IP address, the time of the request and
+the resource requested. GitHub states that it logs visitors' IP addresses for
+security purposes, including when visitors are not signed in. The page prepared
+by the developer contains no analytics trackers, external scripts or downloaded
+third-party fonts. See
+<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages information about visitor data</a>
+and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+<p>When you visit the <a href="https://boosty.to/mamokeep">MamoKeep support page on Boosty</a>
+or other external pages, you interact with the relevant service. It may receive
+information about your visit and process data under its own policy. Voluntary
+support for development does not affect the availability of app features.
+Boosty handles accounts and payments under its own documents; MamoKeep does not
+receive payment details through the app.</p>
+<h2 id="en-section-9">9. Managing your data and privacy questions</h2>
+<p>You can view local records and use the editing and deletion actions available
+for the relevant record type, including editing and deleting standalone odometer
+readings as described in section 3.</p>
+<p>You can create backups and exports, disable automatic backups and notifications,
+and choose the recipients of files and text yourself. External copies are managed
+through the relevant apps and services. There is no MamoKeep account that requires
+separate deletion.</p>
+<p>For privacy questions and to exercise rights of access, correction, deletion or
+restriction of processing provided by applicable law, write to
+<strong><a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a></strong>. If your consent is the applicable
+basis for processing, you can withdraw it at the same address. You may also
+contact the competent data protection authority.</p>
+<p>The app has no built-in chat or user support service. If you independently send
+an email to the contact address, the developer receives your sender address,
+message and any attachments you choose to send. These are used to address your
+privacy question and meet applicable legal obligations. This is a separate
+email enquiry, not an automatic transfer of your garage from MamoKeep. Do not
+send documents or your entire garage if a description is enough for your question.</p>
+<p>Data from such an enquiry is retained no longer than necessary to address it
+and meet obligations imposed by law. Once those purposes have been fulfilled,
+the data is deleted unless further retention is required by law. The legal
+bases for processing and response deadlines are determined by applicable law;
+this Policy does not itself replace separate consent where consent is required.
+The email provider's operation is also subject to the
+<a href="https://yandex.ru/legal/confidential/">Yandex Privacy Policy</a>.</p>
+<p>The developer cannot remotely read or modify your local records, delete files
+in storage you select, or recall text already shared with a third-party recipient.
+For these actions, use the methods described above or contact the relevant provider.</p>
+<h2 id="en-section-10">10. Changes to this Policy</h2>
+<p>This Policy is updated when data processing changes. The version date appears
+at the start of each version. A new version is made available on the page where
+this Policy is published.</p>
+<p>Changes to this Policy do not automatically change or delete previously created
+external copies or text already shared.</p>
+</section>
 </main>
 </body>
 </html>
