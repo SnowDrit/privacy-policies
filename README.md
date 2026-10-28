@@ -1,21 +1,28 @@
-# Политики конфиденциальности
+<a href="README.ru.md"><kbd>Русская версия →</kbd></a>
 
-Публичные политики приложений SnowDrit.
+# Privacy Policies
 
-- [MamoKeep](https://snowdrit.github.io/privacy-policies/mamokeep/) — редакция от 28 октября 2026 года.
+Public privacy policies for SnowDrit applications.
 
-Сайт: https://snowdrit.github.io/privacy-policies/
+- [MamoKeep](https://snowdrit.github.io/privacy-policies/mamokeep/) — version dated 28 October 2026. Russian comes first, followed by [English](https://snowdrit.github.io/privacy-policies/mamokeep/#en).
 
-## Структура
+[Website](https://snowdrit.github.io/privacy-policies/)
 
-Каждому приложению соответствует отдельная папка с `index.html`.
-Новая политика добавляется в новую папку и в список на главной странице.
-При обновлении существующей политики сохраняйте её адрес и указывайте дату редакции.
+## Structure
 
-GitHub Pages публикует ветку `main`, корневую папку. Файл `.nojekyll`
-позволяет раздавать готовый HTML без обработки Jekyll.
+Each application has its own directory containing an `index.html` file.
+To add a policy, create a directory and add a link to the home page.
+When updating an existing policy, keep its URL and update the version date.
 
-Политика PixelMine продолжает находиться в прежнем отдельном репозитории:
-https://snowdrit.github.io/pixelmine-privacy/
+GitHub Pages serves the repository root from the `main` branch. The `.nojekyll`
+file allows the HTML files to be served without Jekyll processing.
 
-Этот репозиторий содержит документы о конфиденциальности, а не исходники приложений.
+The [PixelMine privacy policy](https://snowdrit.github.io/pixelmine-privacy/)
+remains in its existing separate repository.
+
+This repository contains privacy documents. Application source code is maintained separately.
+
+## Languages
+
+The main repository README is in English, with a separate Russian version linked at the top.
+Within each bilingual privacy policy, the Russian text comes first and the English text follows below.
