@@ -2,7 +2,7 @@
 
 Публичные политики приложений SnowDrit.
 
-- [MamoKeep](https://snowdrit.github.io/privacy-policies/mamokeep/) — редакция от 25 октября 2026 года.
+- [MamoKeep](https://snowdrit.github.io/privacy-policies/mamokeep/) — редакция от 28 октября 2026 года.
 
 Сайт: https://snowdrit.github.io/privacy-policies/
 
